@@ -44,8 +44,8 @@ struct PageTwoView: View {
                         TextField("0", value: $period, format: .number)
                             .multilineTextAlignment(TextAlignment.trailing)
                         Picker(selection: $selectedPeriod, label: Text("")) {
-                            ForEach(0 ..< periodChoices.count) { periodChoice in
-                                Text(self.periodChoices[periodChoice])
+                            ForEach(periodChoices.indices, id: \.self) { periodIndex in
+                                Text(self.periodChoices[periodIndex])
                             }
                         }.labelsHidden()
                         Text("間")
@@ -53,9 +53,10 @@ struct PageTwoView: View {
                     HStack {
                         Text("使用頻度：")
                         Picker(selection: $selectedFrequency, label: Text("")) {
-                            ForEach(0 ..< frequencyChoices.count) { frequencyChoice in
-                                Text(self.frequencyChoices[frequencyChoice])
+                            ForEach(frequencyChoices.indices, id: \.self) { frequencyIndex in
+                                Text(self.frequencyChoices[frequencyIndex])
                             }
+
                         }.labelsHidden()
                     }.padding(10)
                 }
@@ -102,6 +103,7 @@ struct PageTwoView: View {
     }
 }
 
+//使用期間の単位に応じて日数に変換
 func convertToDays(period: inout Int?, periodChoices: [String], selectedPeriod: Int) -> Int{
     var days = 0
     if period != nil {
@@ -119,6 +121,7 @@ func convertToDays(period: inout Int?, periodChoices: [String], selectedPeriod: 
     return days
 }
 
+//使用日数を使用頻度に合わせて変換
 func numberOfDaysUsed(period: inout Int?, frequencyChoices: [String], selectedFrequency: Int, days: Int) -> Int{
     var daysUsed = 0
     if period != nil {

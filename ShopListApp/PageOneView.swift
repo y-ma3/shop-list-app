@@ -14,6 +14,7 @@ struct PageOneView: View {
     @State var isAlert: Bool = false
     
     var body: some View {
+        
         ZStack {
             VStack {
                 ZStack {
