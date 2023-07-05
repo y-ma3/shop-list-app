@@ -1,4 +1,4 @@
-# 買い物リストアプリ👜（リリース済み）
+# 買い物リストアプリ👜（リリース済み） ![appstore](https://github.com/tsuri33/shop-list-app/assets/133128231/dcbfaa33-d559-4d8c-aa9f-10ef67ede46a)
 
 AppStoreのリンクは[こちら](https://apps.apple.com/us/app/買い物リストアプリ/id6449244738)
 
@@ -15,7 +15,6 @@ AppStoreのリンクは[こちら](https://apps.apple.com/us/app/買い物リス
 
 ## 開発言語・技術
 
-・Swift
-・SwiftUI
+・Swift ・SwiftUI
 
 ## アピールポイント
