@@ -1,4 +1,4 @@
-# 買い物リストアプリ👜（リリース済み） <img src="https://github.com/tsuri33/shop-list-app/assets/133128231/dcbfaa33-d559-4d8c-aa9f-10ef67ede46a" width="100">
+# 買い物リストアプリ（リリース済み） <img src="https://github.com/tsuri33/shop-list-app/assets/133128231/dcbfaa33-d559-4d8c-aa9f-10ef67ede46a" width="60">
 
 AppStoreのリンクは[こちら](https://apps.apple.com/us/app/買い物リストアプリ/id6449244738)
 
