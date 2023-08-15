@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C3AC19A29F97C4000C35EFC /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC19929F97C4000C35EFC /* PageOneView.swift */; };
 		5C3AC19C29F97C9000C35EFC /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC19B29F97C9000C35EFC /* PageTwoView.swift */; };
 		5C49EBFE29D42EEB0074D03B /* ShopListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49EBFD29D42EEB0074D03B /* ShopListAppApp.swift */; };
 		5C49EC0029D42EEB0074D03B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49EBFF29D42EEB0074D03B /* ContentView.swift */; };
 		5C49EC0229D42EEC0074D03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C49EC0129D42EEC0074D03B /* Assets.xcassets */; };
 		5C49EC0529D42EEC0074D03B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C49EC0429D42EEC0074D03B /* Preview Assets.xcassets */; };
 		5C69A11429FD1B5300EBEB9B /* ResultModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C69A11329FD1B5300EBEB9B /* ResultModalView.swift */; };
-		5CC4392C2A0BCB6D0094C004 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC4392B2A0BCB6D0094C004 /* Launch Screen.storyboard */; };
+		5C6B6EDE2A30C0CB00DC3CC9 /* PageOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC19929F97C4000C35EFC /* PageOneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +24,8 @@
 		5C49EBFF29D42EEB0074D03B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C49EC0129D42EEC0074D03B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C49EC0429D42EEC0074D03B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5C65F4392A8BB064006B2C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5C69A11329FD1B5300EBEB9B /* ResultModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModalView.swift; sourceTree = "<group>"; };
-		5CC4392B2A0BCB6D0094C004 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,7 @@
 		5C49EBFC29D42EEB0074D03B /* ShopListApp */ = {
 			isa = PBXGroup;
 			children = (
-				5CC4392B2A0BCB6D0094C004 /* Launch Screen.storyboard */,
+				5C65F4392A8BB064006B2C17 /* Info.plist */,
 				5C49EBFD29D42EEB0074D03B /* ShopListAppApp.swift */,
 				5C49EBFF29D42EEB0074D03B /* ContentView.swift */,
 				5C3AC19929F97C4000C35EFC /* PageOneView.swift */,
@@ -137,7 +136,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC4392C2A0BCB6D0094C004 /* Launch Screen.storyboard in Resources */,
 				5C49EC0529D42EEC0074D03B /* Preview Assets.xcassets in Resources */,
 				5C49EC0229D42EEC0074D03B /* Assets.xcassets in Resources */,
 			);
@@ -151,9 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C69A11429FD1B5300EBEB9B /* ResultModalView.swift in Sources */,
-				5C3AC19A29F97C4000C35EFC /* PageOneView.swift in Sources */,
 				5C49EC0029D42EEB0074D03B /* ContentView.swift in Sources */,
 				5C3AC19C29F97C9000C35EFC /* PageTwoView.swift in Sources */,
+				5C6B6EDE2A30C0CB00DC3CC9 /* PageOneView.swift in Sources */,
 				5C49EBFE29D42EEB0074D03B /* ShopListAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +279,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ShopListApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 92A9JABXDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopListApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "買い物リスト";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
@@ -299,12 +298,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuma.ShopListApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -317,14 +316,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"ShopListApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 92A9JABXDQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopListApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "買い物リスト";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
@@ -335,12 +335,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.yuma.ShopListApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
