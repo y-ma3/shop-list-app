@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C3AC19929F97C4000C35EFC /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; };
+		5C3AC19929F97C4000C35EFC /* PageOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageOneView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		5C3AC19B29F97C9000C35EFC /* PageTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoView.swift; sourceTree = "<group>"; };
 		5C49EBFA29D42EEB0074D03B /* ShopListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C49EBFD29D42EEB0074D03B /* ShopListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListAppApp.swift; sourceTree = "<group>"; };
