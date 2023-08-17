@@ -11,11 +11,6 @@ struct ContentView: View {
     
     @State var selection = 1
     
-    init() {
-        UITabBar.appearance().backgroundColor = UIColor.quaternaryLabel
-    }
-    
-    
     var body: some View {
         
         TabView(selection: $selection) {
