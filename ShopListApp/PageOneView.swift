@@ -18,7 +18,10 @@ struct PageOneView: View {
         ZStack {
             VStack {
                 ZStack {
-                    Text("買い物リスト").font(.largeTitle).bold().padding(.top)
+                    Text("買い物リスト")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.top)
                     MyEditButton().padding(.leading, 310.0)
                 }
                 HStack {    
@@ -56,7 +59,7 @@ struct PageOneView: View {
                     }
                 }
             }.alert(isPresented: self.$isAlert) {
-                Alert(title: Text("予定を入力してください"), dismissButton: .default(Text("OK")))
+                Alert(title: Text("欲しいものを入力してください"), dismissButton: .default(Text("OK")))
             }.onAppear() {
                 guard let defaultItem = UserDefaults.standard.array(forKey: "itemSave") as? [String] else {return}
                 self.items = defaultItem
