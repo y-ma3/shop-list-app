@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2E32D92A922DFA00386A40 /* AppVersionMonitorSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C2E32D82A922DFA00386A40 /* AppVersionMonitorSwiftUI */; };
 		5C3AC19C29F97C9000C35EFC /* PageTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3AC19B29F97C9000C35EFC /* PageTwoView.swift */; };
 		5C49EBFE29D42EEB0074D03B /* ShopListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49EBFD29D42EEB0074D03B /* ShopListAppApp.swift */; };
 		5C49EC0029D42EEB0074D03B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49EBFF29D42EEB0074D03B /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2E32D92A922DFA00386A40 /* AppVersionMonitorSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = ShopListApp;
+			packageProductDependencies = (
+				5C2E32D82A922DFA00386A40 /* AppVersionMonitorSwiftUI */,
+			);
 			productName = ShopListApp;
 			productReference = 5C49EBFA29D42EEB0074D03B /* ShopListApp.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 5C49EBF129D42EEB0074D03B;
+			packageReferences = (
+				5C2E32D72A922DFA00386A40 /* XCRemoteSwiftPackageReference "AppVersionMonitorSwiftUI" */,
+			);
 			productRefGroup = 5C49EBFB29D42EEB0074D03B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,6 +377,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C2E32D72A922DFA00386A40 /* XCRemoteSwiftPackageReference "AppVersionMonitorSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SNQ-2001/AppVersionMonitorSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C2E32D82A922DFA00386A40 /* AppVersionMonitorSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C2E32D72A922DFA00386A40 /* XCRemoteSwiftPackageReference "AppVersionMonitorSwiftUI" */;
+			productName = AppVersionMonitorSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C49EBF229D42EEB0074D03B /* Project object */;
 }
