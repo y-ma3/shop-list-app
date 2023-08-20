@@ -1,10 +1,3 @@
-//
-//  ResultModalView.swift
-//  ShopListApp
-//
-//  Created by 釣悠馬 on 2023/04/29.
-//
-
 import SwiftUI
 
 struct ResultModalView: View {

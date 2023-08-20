@@ -1,10 +1,3 @@
-//
-//  PageOneView.swift
-//  ShopListApp
-//
-//  Created by 釣悠馬 on 2023/04/27.
-//
-
 import SwiftUI
 
 struct PageOneView: View {
