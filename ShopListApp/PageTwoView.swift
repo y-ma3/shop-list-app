@@ -26,7 +26,9 @@ struct PageTwoView: View {
     
     var body: some View {
         VStack {
-            Text("買い物満足度診断").font(.largeTitle).padding()
+            Spacer()
+            Text("買い物満足度診断").font(.title)
+            Spacer()
             Form {
                 Section (header: Text("欲しい商品の情報を入力してください")) {
                     HStack {
@@ -76,15 +78,14 @@ struct PageTwoView: View {
                     }.padding(10)
                 }
             }
-            
+            Spacer()
             Button(action: {
                 self.days = convertToDays(period: &self.period, periodChoices: self.periodChoices, selectedPeriod: self.selectedPeriod)
                 self.daysUsed = numberOfDaysUsed(period: &self.period, frequencyChoices: self.frequencyChoices, selectedFrequency: self.selectedFrequency, days: self.days)
-                print(daysUsed)
                 if self.itemName == "" || self.price == nil || self.period == nil || self.asset == 0 || self.hourlyWage == 0 {
                     self.isAlert.toggle()
                 }
-                self.showingResultModal.toggle()
+                self.showingResultModal = true
             }){
                 Text("診断スタート")
                     .bold()
@@ -94,6 +95,7 @@ struct PageTwoView: View {
                     .background(Color.blue)
                     .cornerRadius(25)
             }.padding(10)
+            Spacer()
                 .sheet(isPresented: $showingResultModal) {
                     ResultModalView(itemName: self.$itemName, price: self.$price, asset: self.$asset, hourlyWage: self.$hourlyWage, daysUsed: self.$daysUsed)
                 }
