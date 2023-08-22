@@ -80,12 +80,13 @@ struct PageTwoView: View {
             }
             Spacer()
             Button(action: {
-                self.days = convertToDays(period: &self.period, periodChoices: self.periodChoices, selectedPeriod: self.selectedPeriod)
-                self.daysUsed = numberOfDaysUsed(period: &self.period, frequencyChoices: self.frequencyChoices, selectedFrequency: self.selectedFrequency, days: self.days)
                 if self.itemName == "" || self.price == nil || self.period == nil || self.asset == 0 || self.hourlyWage == 0 {
                     self.isAlert.toggle()
+                } else {
+                    self.days = convertToDays(period: &self.period, periodChoices: self.periodChoices, selectedPeriod: self.selectedPeriod)
+                    self.daysUsed = numberOfDaysUsed(period: &self.period, frequencyChoices: self.frequencyChoices, selectedFrequency: self.selectedFrequency, days: self.days)
+                    self.showingResultModal = true
                 }
-                self.showingResultModal = true
             }){
                 Text("診断スタート")
                     .bold()
