@@ -1,6 +1,6 @@
 # 買い物リストアプリ（リリース済）
 
-AppStoreのリンクは[こちら](https://apps.apple.com/us/app/買い物リストアプリ/id6449244738)
+AppStoreのリンクは[こちら](https://apps.apple.com/jp/app/id6449244738)
 
 1. [概要](#概要)
 2. [開発背景・目的](#開発背景)
