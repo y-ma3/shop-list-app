@@ -21,7 +21,7 @@ struct ContentView: View {
         .alert(isPresented: $isAlert) {
             Alert(title: Text("お知らせ"), message: Text("最新バージョンがあります"), dismissButton: .default(Text("OK")) {
                 // AppStoreを開く
-                let url = URL(string: "https://apps.apple.com/us/app/%E8%B2%B7%E3%81%84%E7%89%A9%E3%83%AA%E3%82%B9%E3%83%88%E3%82%A2%E3%83%97%E3%83%AA/id6449244738")!
+                let url = URL(string: "https://apps.apple.com/jp/app/id6449244738")!
                 // URLを開けるかをチェックする
                 if UIApplication.shared.canOpenURL(url) {
                     // URLを開く

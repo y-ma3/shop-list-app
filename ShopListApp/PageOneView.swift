@@ -2,6 +2,8 @@ import SwiftUI
 
 struct PageOneView: View {
     
+    @FocusState  var isActive:Bool
+    
     @State var items: [String] = []
     @State var newItem = ""
     @State var isAlert: Bool = false
@@ -21,7 +23,14 @@ struct PageOneView: View {
                     TextField("欲しいものを入力してください", text: $newItem)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(width: 300)
-                    
+                        .focused($isActive)
+                        .toolbar {
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Button("閉じる") {
+                                    isActive = false
+                                }
+                            }
+                        }
                     Button(action: {
                         if self.newItem == "" {
                             self.isAlert.toggle()
@@ -43,7 +52,8 @@ struct PageOneView: View {
                 List {
                     ForEach (items, id: \.self) { item in
                         Text(item)
-                    }.onDelete { (IndexSet) in
+                    }
+                    .onDelete { (IndexSet) in
                         self.items.remove(atOffsets: IndexSet)
                         UserDefaults.standard.set(self.items, forKey: "itemSave")
                     }.onMove { (IndexSet, Destination) in
@@ -80,9 +90,18 @@ struct MyEditButton: View {
                 Text("編集")
             }
         }
+        .modifier(DismissKeyboardOnTap())
     }
 }
 
+struct DismissKeyboardOnTap: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .onTapGesture {
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
+    }
+}
 
 struct PageOneView_Previews: PreviewProvider {
     static var previews: some View {
